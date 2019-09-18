@@ -1,0 +1,25 @@
+extend type Subscription {
+    postAdded: Post
+}
+
+extend type Query {
+        posts: [Post!]
+        uploads: [File]
+    }
+
+type Post {
+        _id: String!
+        name: String!
+        author: User!
+    }
+
+type File {
+    filename: String!
+    mimetype: String!
+    encoding: String!
+  }
+  
+extend type Mutation {
+        singleUpload(file: Upload!): File!
+        createPost(name: String!, author: String!) : Post!
+    }

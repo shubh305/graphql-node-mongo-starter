@@ -1,0 +1,25 @@
+{
+  "name": "graphql-starter",
+  "version": "1.0.0",
+  "description": "GraphQL starter project with production ready scalable architecture.",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon src/server.js --exec babel-node",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "7.6.0",
+    "@babel/node": "^7.6.1",
+    "@babel/preset-env": "7.6.0",
+    "apollo-server-express": "^2.9.3",
+    "lodash": "^4.17.15",
+    "mongoose": "^5.7.1",
+    "nodemon": "^1.19.2"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-optional-chaining": "^7.6.0"
+  }
+}
