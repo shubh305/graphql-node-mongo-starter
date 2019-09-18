@@ -1,0 +1,16 @@
+extend type Query {
+        users: [User!]
+    }
+
+type User {
+        _id: String,
+        isActive: Boolean!
+        age: Int
+        name: String!
+        gender: String!
+        company: String!
+    }
+
+extend type Mutation {
+        createUser(name: String!, gender: String!, age: Int) : User!
+    }
